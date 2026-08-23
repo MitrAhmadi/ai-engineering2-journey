@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.45",
+    "@anthropic-ai/sdk": "^0.120.0",
+    "ai": "^7.0.73",
+    "dotenv": "^17.4.2",
+    "openai": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}
