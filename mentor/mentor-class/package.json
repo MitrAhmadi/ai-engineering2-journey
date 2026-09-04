@@ -1,0 +1,27 @@
+{
+  "name": "mentor-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx --env-file=.env agent.ts",
+    "typecheck": "tsc --noEmit",
+    "eval:contract": "tsx evals/dump_contract.ts",
+    "eval": "tsx evals/dump_contract.ts && .venv/bin/pytest evals -v",
+    "eval:fast": "tsx evals/dump_contract.ts && .venv/bin/pytest evals -v -m 'not judge'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "openai": "^7.10.0",
+    "pnpm": "^11.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
