@@ -1,0 +1,19 @@
+{
+  "name": "mentor-evals",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "spec": "tsx run.ts --spec-only",
+    "eval": "tsx --env-file=../mentor-agent/.env run.ts",
+    "all": "tsx --env-file=../mentor-agent/.env run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
