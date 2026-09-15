@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": [
+      "@cloudflare/workers-types"
+    ],
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/worker.tsbuildinfo"
+  },
+  "include": [
+    "src/worker.ts",
+    "src/agent.ts",
+    "src/agent-core.ts",
+    "src/system-prompt.ts",
+    "src/tools/**/*.ts",
+    "src/canvas/**/*.ts",
+    "src/rag/vector-store.ts"
+  ]
+}

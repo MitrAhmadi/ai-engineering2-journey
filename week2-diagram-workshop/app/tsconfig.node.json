@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/node.tsbuildinfo",
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "evals/**/*.ts",
+    "vite.config.ts",
+    "src/agent-core.ts",
+    "src/system-prompt.ts",
+    "src/tools/**/*.ts",
+    "src/canvas/**/*.ts",
+    "src/rag/**/*.ts"
+  ]
+}

@@ -1,0 +1,13 @@
+# cp .dev.vars.example .dev.vars, then fill in.
+OPENAI_API_KEY=sk-...
+
+# Optional. Free tier at https://tavily.com — used by the searchWeb tool (Part 8).
+TAVILY_API_KEY=
+
+# Optional. Free tier at https://console.upstash.com/vector — used by RAG (Part 9).
+UPSTASH_VECTOR_REST_URL=
+UPSTASH_VECTOR_REST_TOKEN=
+
+# Optional. Free tier at https://braintrust.dev — the eval dashboard (Parts 3-10).
+# `npm run eval:local` needs no account.
+BRAINTRUST_API_KEY=

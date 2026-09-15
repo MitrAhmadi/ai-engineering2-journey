@@ -1,0 +1,745 @@
+{
+  "model": "gpt-5.4-mini",
+  "system": "steps/part2/system-prompt.ts",
+  "tools": "steps/part2/tools.ts",
+  "mean": 0.7475426887926888,
+  "rows": [
+    {
+      "id": "create-01-single-box",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "2 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 1/1"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "1 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0,
+          "note": "1 overlapping pair(s): rect1+text1"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.5,
+          "note": "failed: The rectangle carries the label Hello"
+        }
+      ],
+      "ms": 3957
+    },
+    {
+      "id": "create-02-three-chain",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "8 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 3/3, arrow 2/2"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0,
+          "note": "0/2 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "3 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0.8,
+          "note": "3 overlapping pair(s): user1+user1_text, api1+api1_text, db1+db1_text"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.6666666666666666,
+          "note": "failed: An arrow runs from User to API and another from API to Database"
+        }
+      ],
+      "ms": 4913
+    },
+    {
+      "id": "create-03-flowchart",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "7 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "diamond 1/1, arrow 3/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0,
+          "note": "0/3 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": null
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.3333333333333333,
+          "note": "failed: The decision has two outgoing arrows, one for yes and one for no; The flow reads top to bottom"
+        }
+      ],
+      "ms": 4696
+    },
+    {
+      "id": "create-04-sequence-oauth",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "18 elements"
+        },
+        {
+          "name": "structure",
+          "score": 0.5,
+          "note": "rectangle 0/3, arrow 6/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0,
+          "note": "0/6 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 8106
+    },
+    {
+      "id": "create-05-state-machine",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "11 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "ellipse 4/4, arrow 3/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0,
+          "note": "0/3 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "4 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0.8571428571428572,
+          "note": "4 overlapping pair(s): state_pending+text_pending, state_paid+text_paid, state_shipped+text_shipped"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.5,
+          "note": "failed: Arrows connect the states in order: pending to paid to shipped to delivered"
+        }
+      ],
+      "ms": 4913
+    },
+    {
+      "id": "create-06-architecture",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "14 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 5/5, arrow 4/4"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0,
+          "note": "0/4 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "5 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0.8888888888888888,
+          "note": "5 overlapping pair(s): browser1+browser1_text, cdn1+cdn1_text, apigw1+apigw1_text"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.6666666666666666,
+          "note": "failed: Arrows show the request path from browser through to the database"
+        }
+      ],
+      "ms": 5845
+    },
+    {
+      "id": "create-07-wide-labels",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "6 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 3/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "3 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0.8,
+          "note": "3 overlapping pair(s): box1+label1, box2+label2, box3+label3"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 4788
+    },
+    {
+      "id": "modify-01-recolour",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "5 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 0.5,
+          "note": "changed the canvas without reading it first"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "1/1 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.3333333333333333,
+          "note": "failed: The Login box is red — either filled red or outlined red; The Home box is not red"
+        }
+      ],
+      "ms": 6755
+    },
+    {
+      "id": "modify-02-insert-cache",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "13 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 0.5,
+          "note": "changed the canvas without reading it first"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0.3333333333333333,
+          "note": "1/3 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 0.4,
+          "note": "3 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0.75,
+          "note": "7 overlapping pair(s): rect_api+api1, rect_api+api1_text, rect_api+cache1"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.6666666666666666,
+          "note": "failed: The Cache is connected by arrows on both sides"
+        }
+      ],
+      "ms": 4664
+    },
+    {
+      "id": "modify-03-rename",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "2 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 0.5,
+          "note": "changed the canvas without reading it first"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": null
+        },
+        {
+          "name": "labels",
+          "score": 0,
+          "note": "missing: postgres"
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0,
+          "note": "failed: The box now reads Postgres; No box labelled Database remains"
+        }
+      ],
+      "ms": 3056
+    },
+    {
+      "id": "modify-04-delete",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "4 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 0,
+          "note": "nothing was changed"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.5,
+          "note": "failed: The Cache box is gone"
+        }
+      ],
+      "ms": 2540
+    },
+    {
+      "id": "domain-01-deploy-pipeline",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "17 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 0,
+          "note": "0/5 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "6 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0.9090909090909091,
+          "note": "6 overlapping pair(s): text_start+rect_start, text_build+rect_build, text_test+rect_test"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.3333333333333333,
+          "note": "failed: The diagram reflects the documented pipeline rather than a generic CI/CD flow; The steps are connected in order"
+        }
+      ],
+      "ms": 8540
+    },
+    {
+      "id": "edge-01-contradiction",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "2 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": null
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 0,
+          "note": "1 floating text on top of a shape"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0,
+          "note": "1 overlapping pair(s): shape1+shape1_label"
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.5,
+          "note": "failed: The agent either picks one interpretation and draws it, or draws both and says so"
+        }
+      ],
+      "ms": 3757
+    },
+    {
+      "id": "edge-02-no-draw",
+      "scores": [
+        {
+          "name": "schema",
+          "score": null
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": null
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": null
+        },
+        {
+          "name": "noOverlaps",
+          "score": null
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": 1,
+          "note": "replied without drawing"
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 2945
+    }
+  ]
+}

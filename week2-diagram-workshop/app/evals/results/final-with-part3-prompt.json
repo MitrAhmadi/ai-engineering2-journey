@@ -1,0 +1,744 @@
+{
+  "model": "gpt-5.4-mini",
+  "system": "steps/part3/system-prompt.ts",
+  "tools": "src/tools/index.ts",
+  "mean": 0.9852380952380952,
+  "rows": [
+    {
+      "id": "create-01-single-box",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "2 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 1/1"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": null
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 3698
+    },
+    {
+      "id": "create-02-three-chain",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "8 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 3/3, arrow 2/2"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "2/2 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 8765
+    },
+    {
+      "id": "create-03-flowchart",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "13 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "diamond 1/1, arrow 3/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "3/3 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.6666666666666666,
+          "note": "failed: The flow reads top to bottom"
+        }
+      ],
+      "ms": 6494
+    },
+    {
+      "id": "create-04-sequence-oauth",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "20 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 3/3, arrow 7/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "7/7 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 7371
+    },
+    {
+      "id": "create-05-state-machine",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "11 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "ellipse 4/4, arrow 3/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "3/3 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 5532
+    },
+    {
+      "id": "create-06-architecture",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "14 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 5/5, arrow 4/4"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "4/4 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 6740
+    },
+    {
+      "id": "create-07-wide-labels",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "6 elements"
+        },
+        {
+          "name": "structure",
+          "score": 1,
+          "note": "rectangle 3/3"
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 0.6666666666666666,
+          "note": "failed: The boxes are wide enough for their labels rather than the default width"
+        }
+      ],
+      "ms": 4457
+    },
+    {
+      "id": "modify-01-recolour",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "5 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "queryCanvas → updateElements"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "1/1 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 4979
+    },
+    {
+      "id": "modify-02-insert-cache",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "9 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "queryCanvas → addElements"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "3/3 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 5203
+    },
+    {
+      "id": "modify-03-rename",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "2 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "queryCanvas → updateElements"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": null
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 4869
+    },
+    {
+      "id": "modify-04-delete",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "2 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "queryCanvas → removeElements"
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": null
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": 1,
+          "note": "nothing lost"
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 6336
+    },
+    {
+      "id": "domain-01-deploy-pipeline",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "23 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": 1,
+          "note": "drew something"
+        },
+        {
+          "name": "boundArrows",
+          "score": 1,
+          "note": "7/7 arrows bound at both ends"
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 1,
+          "note": "clean"
+        },
+        {
+          "name": "labels",
+          "score": 1,
+          "note": "all present"
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 8762
+    },
+    {
+      "id": "edge-01-contradiction",
+      "scores": [
+        {
+          "name": "schema",
+          "score": 1,
+          "note": "4 elements"
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": null
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": 1,
+          "note": "all labels bound"
+        },
+        {
+          "name": "noOverlaps",
+          "score": 0,
+          "note": "1 overlapping pair(s): rect_square_circle+ellipse_square_circle"
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": null
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 3709
+    },
+    {
+      "id": "edge-02-no-draw",
+      "scores": [
+        {
+          "name": "schema",
+          "score": null
+        },
+        {
+          "name": "structure",
+          "score": null
+        },
+        {
+          "name": "toolChoice",
+          "score": null
+        },
+        {
+          "name": "boundArrows",
+          "score": null
+        },
+        {
+          "name": "boundLabels",
+          "score": null
+        },
+        {
+          "name": "noOverlaps",
+          "score": null
+        },
+        {
+          "name": "labels",
+          "score": null
+        },
+        {
+          "name": "preserved",
+          "score": null
+        },
+        {
+          "name": "restraint",
+          "score": 1,
+          "note": "replied without drawing"
+        },
+        {
+          "name": "judge",
+          "score": 1,
+          "note": "all claims hold"
+        }
+      ],
+      "ms": 3172
+    }
+  ]
+}

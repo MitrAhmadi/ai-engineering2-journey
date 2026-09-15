@@ -1,0 +1,395 @@
+[
+  {
+    "id": "create-01-single-box",
+    "input": "Draw a single rectangle labelled Hello",
+    "category": "create",
+    "difficulty": "simple",
+    "expectCounts": {
+      "rectangle": 1
+    },
+    "expectLabels": [
+      "hello"
+    ],
+    "expect": [
+      "There is exactly one rectangle on the canvas",
+      "The rectangle carries the label Hello"
+    ]
+  },
+  {
+    "id": "create-02-three-chain",
+    "input": "Draw a flow from User to API to Database",
+    "category": "create",
+    "difficulty": "simple",
+    "expectCounts": {
+      "rectangle": 3,
+      "arrow": 2
+    },
+    "expectLabels": [
+      "user",
+      "api",
+      "database"
+    ],
+    "expect": [
+      "Three labelled boxes: User, API and Database",
+      "An arrow runs from User to API and another from API to Database",
+      "The three boxes do not overlap each other"
+    ]
+  },
+  {
+    "id": "create-03-flowchart",
+    "input": "Draw a flowchart: receive an order, check whether it is in stock, then either ship it or put it on backorder",
+    "category": "create",
+    "difficulty": "medium",
+    "expectCounts": {
+      "diamond": 1,
+      "arrow": 3
+    },
+    "expectLabels": [
+      "stock"
+    ],
+    "expect": [
+      "A diamond is used for the in-stock decision",
+      "The decision has two outgoing arrows, one for yes and one for no",
+      "The flow reads top to bottom"
+    ]
+  },
+  {
+    "id": "create-04-sequence-oauth",
+    "input": "Draw a sequence diagram of an OAuth login between a User, a Client App and an Auth Server",
+    "category": "create",
+    "difficulty": "hard",
+    "expectCounts": {
+      "rectangle": 3,
+      "arrow": 3
+    },
+    "expectLabels": [
+      "user",
+      "auth"
+    ],
+    "expect": [
+      "Three actors appear across the top of the diagram",
+      "Messages between actors are drawn as arrows in time order",
+      "The arrows are labelled with what each message is"
+    ]
+  },
+  {
+    "id": "create-05-state-machine",
+    "input": "Draw a state machine for an order: pending, paid, shipped, delivered",
+    "category": "create",
+    "difficulty": "medium",
+    "expectCounts": {
+      "ellipse": 4,
+      "arrow": 3
+    },
+    "expectLabels": [
+      "pending",
+      "paid",
+      "shipped",
+      "delivered"
+    ],
+    "expect": [
+      "Each state is an ellipse",
+      "Arrows connect the states in order: pending to paid to shipped to delivered"
+    ]
+  },
+  {
+    "id": "create-06-architecture",
+    "input": "Draw the architecture of a web app: browser, CDN, API gateway, order service, Postgres",
+    "category": "create",
+    "difficulty": "medium",
+    "expectCounts": {
+      "rectangle": 5,
+      "arrow": 4
+    },
+    "expectLabels": [
+      "browser",
+      "cdn",
+      "postgres"
+    ],
+    "expect": [
+      "Five labelled service boxes",
+      "Arrows show the request path from browser through to the database",
+      "No two boxes overlap"
+    ]
+  },
+  {
+    "id": "create-07-wide-labels",
+    "input": "Draw three boxes in a row labelled Authorization Server, Resource Server, and Client Application",
+    "category": "create",
+    "difficulty": "hard",
+    "expectCounts": {
+      "rectangle": 3
+    },
+    "expectLabels": [
+      "authorization server",
+      "resource server",
+      "client application"
+    ],
+    "expect": [
+      "All three labels are present in full",
+      "The boxes are wide enough for their labels rather than the default width",
+      "The boxes do not overlap"
+    ]
+  },
+  {
+    "id": "modify-01-recolour",
+    "input": "Make the Login box red",
+    "category": "modify",
+    "difficulty": "simple",
+    "seed": [
+      {
+        "id": "rect_login",
+        "type": "rectangle",
+        "x": 100,
+        "y": 100,
+        "width": 240,
+        "height": 100,
+        "backgroundColor": "transparent"
+      },
+      {
+        "id": "rect_login_label",
+        "type": "text",
+        "text": "Login",
+        "containerId": "rect_login",
+        "x": 160,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      },
+      {
+        "id": "rect_home",
+        "type": "rectangle",
+        "x": 420,
+        "y": 100,
+        "width": 240,
+        "height": 100,
+        "backgroundColor": "transparent"
+      },
+      {
+        "id": "rect_home_label",
+        "type": "text",
+        "text": "Home",
+        "containerId": "rect_home",
+        "x": 480,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      },
+      {
+        "id": "arrow_login_home",
+        "type": "arrow",
+        "x": 340,
+        "y": 150,
+        "width": 80,
+        "height": 0,
+        "startBinding": {
+          "elementId": "rect_login"
+        },
+        "endBinding": {
+          "elementId": "rect_home"
+        }
+      }
+    ],
+    "preserveIds": [
+      "rect_login",
+      "rect_home",
+      "arrow_login_home"
+    ],
+    "expect": [
+      "The Login box is red \u2014 either filled red or outlined red",
+      "The Home box is not red",
+      "Both boxes are still present"
+    ]
+  },
+  {
+    "id": "modify-02-insert-cache",
+    "input": "Add a Cache between the API and the Database",
+    "category": "modify",
+    "difficulty": "hard",
+    "seed": [
+      {
+        "id": "rect_api",
+        "type": "rectangle",
+        "x": 100,
+        "y": 100,
+        "width": 240,
+        "height": 100
+      },
+      {
+        "id": "rect_api_label",
+        "type": "text",
+        "text": "API",
+        "containerId": "rect_api",
+        "x": 160,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      },
+      {
+        "id": "rect_db",
+        "type": "rectangle",
+        "x": 740,
+        "y": 100,
+        "width": 240,
+        "height": 100
+      },
+      {
+        "id": "rect_db_label",
+        "type": "text",
+        "text": "Database",
+        "containerId": "rect_db",
+        "x": 800,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      },
+      {
+        "id": "arrow_api_db",
+        "type": "arrow",
+        "x": 340,
+        "y": 150,
+        "width": 400,
+        "height": 0,
+        "startBinding": {
+          "elementId": "rect_api"
+        },
+        "endBinding": {
+          "elementId": "rect_db"
+        }
+      }
+    ],
+    "preserveIds": [
+      "rect_api",
+      "rect_db"
+    ],
+    "expectLabels": [
+      "cache"
+    ],
+    "expect": [
+      "A new box labelled Cache sits between the API and the Database",
+      "The API and Database boxes still exist",
+      "The Cache is connected by arrows on both sides"
+    ]
+  },
+  {
+    "id": "modify-03-rename",
+    "input": "Rename the Database box to Postgres",
+    "category": "modify",
+    "difficulty": "medium",
+    "seed": [
+      {
+        "id": "rect_db",
+        "type": "rectangle",
+        "x": 100,
+        "y": 100,
+        "width": 240,
+        "height": 100
+      },
+      {
+        "id": "rect_db_label",
+        "type": "text",
+        "text": "Database",
+        "containerId": "rect_db",
+        "x": 160,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      }
+    ],
+    "preserveIds": [
+      "rect_db"
+    ],
+    "expectLabels": [
+      "postgres"
+    ],
+    "expect": [
+      "The box now reads Postgres",
+      "No box labelled Database remains"
+    ]
+  },
+  {
+    "id": "modify-04-delete",
+    "input": "Delete the Cache box",
+    "category": "modify",
+    "difficulty": "simple",
+    "seed": [
+      {
+        "id": "rect_api",
+        "type": "rectangle",
+        "x": 100,
+        "y": 100,
+        "width": 240,
+        "height": 100
+      },
+      {
+        "id": "rect_api_label",
+        "type": "text",
+        "text": "API",
+        "containerId": "rect_api",
+        "x": 160,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      },
+      {
+        "id": "rect_cache",
+        "type": "rectangle",
+        "x": 420,
+        "y": 100,
+        "width": 240,
+        "height": 100
+      },
+      {
+        "id": "rect_cache_label",
+        "type": "text",
+        "text": "Cache",
+        "containerId": "rect_cache",
+        "x": 480,
+        "y": 140,
+        "width": 80,
+        "height": 20
+      }
+    ],
+    "preserveIds": [
+      "rect_api"
+    ],
+    "expect": [
+      "The Cache box is gone",
+      "The API box is still there"
+    ]
+  },
+  {
+    "id": "domain-01-deploy-pipeline",
+    "input": "Draw our deployment pipeline",
+    "category": "domain",
+    "difficulty": "hard",
+    "expectLabels": [
+      "staging"
+    ],
+    "expect": [
+      "The diagram reflects the documented pipeline rather than a generic CI/CD flow",
+      "A staging step appears before production",
+      "The steps are connected in order"
+    ]
+  },
+  {
+    "id": "edge-01-contradiction",
+    "input": "Draw a square that is also a circle",
+    "category": "edge",
+    "difficulty": "medium",
+    "expect": [
+      "The agent either picks one interpretation and draws it, or draws both and says so",
+      "Something was actually drawn rather than only discussed"
+    ]
+  },
+  {
+    "id": "edge-02-no-draw",
+    "input": "What kinds of diagrams can you make?",
+    "category": "edge",
+    "difficulty": "simple",
+    "expectNoDraw": true,
+    "expect": [
+      "The canvas is left empty"
+    ]
+  }
+]

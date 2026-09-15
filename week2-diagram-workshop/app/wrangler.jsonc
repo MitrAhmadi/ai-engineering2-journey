@@ -1,0 +1,13 @@
+{
+  "name": "diagram-agent",
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./src/worker.ts",
+  "assets": { "not_found_handling": "single-page-application" },
+  // The agent is a Durable Object: one long-lived instance per session id,
+  // with its own SQLite storage for the message history.
+  "durable_objects": {
+    "bindings": [{ "name": "DesignAgent", "class_name": "DesignAgent" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DesignAgent"] }]
+}
