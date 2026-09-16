@@ -1,9 +1,5 @@
-# Secrets — never commit these
+.venv/
+venv/
 .env
-.env.local
-
-# Dependencies
-node_modules/
-
-# Build output
-dist/
+__pycache__/
+*.pyc
