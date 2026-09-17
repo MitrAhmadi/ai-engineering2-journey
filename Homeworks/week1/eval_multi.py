@@ -30,18 +30,19 @@ CASES = [
         "mock_results": {
             "list_files": "agent.py\ntools.py",
             "read_file": (
-                "tools.py defines five tools: list_files lists directory "
-                "contents, read_file reads text file contents, write_file "
-                "creates or overwrites a text file, edit_file replaces the "
-                "first exact occurrence of text in an existing file, and "
-                "web_search searches the web and returns formatted results."
+                "tools.py defines six tools: list_files lists directory contents, "
+                "read_file reads text file contents, write_file creates or "
+                "overwrites a text file, edit_file replaces the first exact "
+                "occurrence of text in an existing file, web_search searches the "
+                "web and returns formatted results, and run_command executes a "
+                "shell command and returns its exit code, stdout, and stderr."
             ),
         },
         "criteria": (
-            "The answer must say that tools.py defines five tools: "
-            "list_files, read_file, write_file, edit_file, and web_search, "
-            "and must correctly describe their purposes without adding "
-            "unsupported claims."
+                "The answer must say that tools.py defines six tools: list_files, "
+                "read_file, write_file, edit_file, web_search, and run_command, "
+                "and must correctly describe their purposes without adding "
+                "unsupported claims."
         ),
     },
     {
@@ -94,6 +95,28 @@ CASES = [
             "The answer must report the final contents as Status: new. "
             "It must not claim that the edit failed or add unsupported "
             "file contents."
+        ),
+    },
+    {
+        "name": "Write and run a script",
+        "task": (
+            "Create hello.py containing Python code that prints exactly "
+            "'Hello from the generated script.' Then run the script and "
+            "report its output."
+        ),
+        "required_trace": ["write_file", "run_command"],
+        "initial_files": {},
+        "mock_results": {
+            "run_command": (
+                "Exit code: 0\n"
+                "stdout:\n"
+                "Hello from the generated script."
+            ),
+        },
+        "criteria": (
+            "The answer must report that the script ran successfully and "
+            "printed exactly: Hello from the generated script. It must not "
+            "add unsupported execution results."
         ),
     },
 ]
